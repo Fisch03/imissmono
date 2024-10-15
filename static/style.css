@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+#app {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: calc(100% - 4rem);
+    width: 40vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+#app > :last-child {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
+#image > img {
+    max-width: 40vw;
+    max-height: 50vh;
+}

@@ -1,0 +1,7 @@
+server:
+  port: 8080 
+
+holodex: 
+  api_key: "12345678-abcd-efgh-ijkl-123456789012"
+
+  channel_id: "UCdubotSy4pPOsiaW4MrYn3Q"
