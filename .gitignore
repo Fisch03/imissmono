@@ -1,3 +1,4 @@
 /target
-/data
 /config/local.yml
+.sqlite-wal
+.sqlite-shm
