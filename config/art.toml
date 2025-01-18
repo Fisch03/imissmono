@@ -3,6 +3,7 @@ twitter = "Grimmjow1903"
 artworks = [
     "daimono.png",
     "kanmono.png",
+    "crymono2.png"
 ]
 
 [artists.Razan]
@@ -23,12 +24,14 @@ artworks = [
     "deadmono.png",
     "bladerunner.png",
     "5secondrule.png",
+    "different.jpg",
 ]
 
 [artists.Akro]
 twitter = "Akrobloop"
 artworks = [
-    "wolverine.png"
+    "wolverine.png",
+    "tabemono_misses_mono.png",
 ]
 
 [artists.Gadzooki]
