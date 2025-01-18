@@ -1,4 +1,5 @@
 mod config;
 pub use config::config;
 
-pub mod db;
+mod art;
+pub use art::Artworks;

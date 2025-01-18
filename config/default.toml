@@ -1,0 +1,6 @@
+[server]
+port = 8080 
+
+[holodex] 
+channel_id = "UCdubotSy4pPOsiaW4MrYn3Q"
+

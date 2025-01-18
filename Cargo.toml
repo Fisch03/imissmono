@@ -5,13 +5,11 @@ edition = "2021"
 
 [dependencies]
 axum = "0.7"
-config = "0.14"
+config = "0.15"
 maud = {version = "0.26", features = ["axum"] }
 serde = "1"
 tokio = { version = "1", features = ["full"] }
-tracing = "0.1"
-tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 tower-http = { version = "0.6", features = ["fs", "compression-gzip", "compression-br", "compression-deflate", "compression-zstd"] }
 holodex = "0.3.3"
-chrono = "0.4.38"
-sqlx = { version = "0.8.0", features = ["runtime-tokio", "sqlite", "chrono"] }
+chrono = "0.4.39"
+rand = "0.8.5"

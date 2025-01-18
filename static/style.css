@@ -1,4 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:BNCE,INFM@15,35&display=swap');
+
+:root {
+    --text-fg: #FFFFFF; 
+
+    --outer-bg: #37363d;
+    --inner-bg: #4e4d5c;
+
+    --accent-border: #000000;
+
+    --accent-one: #D076CC;
+    --accent-two: #F2B441;
+    --accent-three: #9294E3;
+    --accent-four: #9CCCA7;
+}
+
+ body::before {
+    content: "";
+    position: fixed;
+    width: 500%;
+    height: 500%;
+    top: -250%;
+    left: -250%;
+    z-index: -1;
+    background-image: url("bg/halftone-dark.png");
+    background-size: 15px;
+    transform: rotate(-30deg);
+}
+
 body {
+    color: var(--text-fg);
+    text-transform: lowercase;
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BNCE" 15,
+      "INFM" 35,
+      "SPAC" 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,26 +47,77 @@ body {
     margin: 0;
 }
 
+a:link, a:visited {
+    color: var(--text-fg);
+}
+
+a:hover {
+    color: var(--accent-one);
+}
+
+
 #app {
     margin-top: 2rem;
     margin-bottom: 2rem;
     height: calc(100% - 4rem);
-    width: 40vw;
+    width: 30vw;
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
+    /* display: flex; */
+    /* flex-flow: column nowrap; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* gap: 2rem; */
+
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    grid-template-columns: 1fr;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+#app > * {
+    background-image: url("bg/checkered-dark.png") !important;
+    background-repeat: repeat;
+    background-size: 20px;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid var(--accent-border) !important;
+    box-shadow: 5px 5px var(--accent-two), 6px 6px var(--accent-border);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    /* width: 30vw; */
 }
 
 #app > :last-child {
-    margin-top: auto;
-    margin-bottom: 0;
+    align-self: end;
 }
 
+#image {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
 
 #image > img {
-    max-width: 40vw;
     max-height: 50vh;
+    max-width: 30vw;
+    padding: 0;
+    border-radius: 20px;
+}
+
+#timer {
+    font-size: 1.2rem;
+}
+
+#artist {
+    padding-top: 10px;
+}
+
+#ytplayer {
+    border-radius: 20px;
+    width: 100%;
 }

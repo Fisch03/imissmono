@@ -1,0 +1,42 @@
+[artists.Grimm]
+twitter = "Grimmjow1903"
+artworks = [
+    "daimono.png",
+    "kanmono.png",
+]
+
+[artists.Razan]
+twitter = "Razante_ray"
+artworks = [
+    "ohtabemono.jpg",
+    "noboobies.jpg",
+]
+
+[artists.Glumduk]
+twitter = "Glumdoodle"
+artworks = [
+    "man.jpg",
+    "miss_mono.png",
+    "waitmono.png",
+    "yamchad.png",
+    "poisoned.png",
+    "deadmono.png",
+    "bladerunner.png",
+    "5secondrule.png",
+]
+
+[artists.Akro]
+twitter = "Akrobloop"
+artworks = [
+    "wolverine.png"
+]
+
+[artists.Gadzooki]
+twitter = "gadz00ki"
+artworks = [
+    "lacreatura.png",
+    "sniff.png",
+    "stare.jpg",
+]
+
+
